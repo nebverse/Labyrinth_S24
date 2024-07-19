@@ -1,0 +1,5 @@
+gymnasium
+numpy
+opencv-python
+pypot
+sheeprl
