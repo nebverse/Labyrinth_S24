@@ -1,5 +1,3 @@
-# Labyrinth_S24
-
 # Raspberry Pi Setup Guide
 
 This guide provides step-by-step instructions for setting up a Raspberry Pi with Raspberry Pi OS and configuring it for use with Dynamixel MX-28AT motors. It also includes information on setting up a virtual environment, installing necessary software packages, and connecting peripherals.
@@ -20,7 +18,7 @@ This guide provides step-by-step instructions for setting up a Raspberry Pi with
 ### 1. Install Raspberry Pi OS
 
 1. Download and install the Raspberry Pi Imager from [Raspberry Pi Software](https://www.raspberrypi.com/software/).
-2. Use the Raspberry Pi Imager to install Raspberry Pi OS on the SD card (32 GB recommended).
+2. Use the Raspberry Pi Imger to install Raspberry Pi OS on the SD card (32 GB recommended).
 3. Follow the steps mentioned in the Raspberry Pi Imager.
 
 ### 2. Initial Setup
@@ -40,7 +38,8 @@ This guide provides step-by-step instructions for setting up a Raspberry Pi with
 
 1. Follow the instructions in the [Poppy Project Documentation](https://docs.poppy-project.org/en/assembly-guides/poppy-torso/addressing_dynamixel#connect-a-single-motor-to-configure-it) to connect the Dynamixel MX-28AT motor.
 2. If you need to reconfigure the motor settings, use the Dynamixel Wizard.
-3. If you encounter a permission error with `/dev/ttyACM0` in Linux, run the following command:
+3. If you encounter a permission error with `/dev/ttyACM0`, run the following command:
+
     ```bash
     sudo chmod 666 /dev/ttyACM0
     ```
@@ -62,9 +61,15 @@ This guide provides step-by-step instructions for setting up a Raspberry Pi with
 
 For implementing model-based reinforcement learning, refer to this [arXiv paper](https://arxiv.org/pdf/2312.09906).
 
+## Code
+
+The code for this project is not fully complete. The last checkpoint is present under `final_project/gym-labyrinth` along with the custom environment created. Please refer to this directory for the latest updates and the current state of the project.
+
+### Some files explaination (TODO)
+
 ## Notes
 
 - Ensure all connections are secure and double-check the power supply specifications to avoid any damage to the Raspberry Pi and connected peripherals.
 - Regularly update the Raspberry Pi OS and installed packages to maintain security and functionality.
 
-Feel free to reach out if you have any questions or encounter issues during the setup process. Happy tinkering!
+
