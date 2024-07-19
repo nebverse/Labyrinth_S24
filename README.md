@@ -40,7 +40,7 @@ This guide provides step-by-step instructions for setting up a Raspberry Pi with
 
 1. Follow the instructions in the [Poppy Project Documentation](https://docs.poppy-project.org/en/assembly-guides/poppy-torso/addressing_dynamixel#connect-a-single-motor-to-configure-it) to connect the Dynamixel MX-28AT motor.
 2. If you need to reconfigure the motor settings, use the Dynamixel Wizard.
-3. If you encounter a permission error with `/dev/ttyACM0`, run the following command:
+3. If you encounter a permission error with `/dev/ttyACM0` in Linux, run the following command:
     ```bash
     sudo chmod 666 /dev/ttyACM0
     ```
